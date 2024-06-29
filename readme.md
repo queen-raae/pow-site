@@ -8,5 +8,6 @@ Astro is a web framework that is performant, user-friendly, and elegant. I made 
 - Integration of Google Fonts: [https://fonts.google.com/](https://fonts.google.com/)
 - Structured metadata setup for improved SEO (see header in layout file)
 - Added navbar and footer components
+- Added a 404 page
 
 Get started with Astro today at [https://astro.build/](https://astro.build/).
