@@ -1,11 +1,13 @@
 ---
-
+import { Image } from 'astro:assets';
+import localPOWImage from '../images/logo.png';
 ---
+
 
 <nav class="bg-slate-50 p-4">
     <div class="max-w-xl mx-auto">
         <a href="/" title="POW!">
-            <i class="material-icons">rocket</i>  POW!
+            <Image src={localPOWImage} alt="A logo sitting on a nest of eggs." />
         </a>
     </div>
     <div class="max-w-xl mx-auto">
