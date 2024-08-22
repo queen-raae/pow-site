@@ -1,5 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from 'astro:assets';
+import localPOWfamilyImage from '../images/pow-family.jpg';
+import localPOWgangImage from '../images/pow-gang.jpg';
+import localPOWkeyImage from '../images/pow-key-lock.jpg';
+
 ---
 
 <Layout
@@ -174,6 +179,10 @@ import Layout from "../layouts/Layout.astro";
 				>
 					) and Pirate Princess Lillian. A small family (business) in the tiny capital of Norway, Oslo.
 			</p>
+
+			<Image class="mb-8" src={localPOWfamilyImage}  alt="Queen Raae, Cap'n Ola and Pirate Princess Lillian. A small family (business)." />
+			<Image class="mb-8" src={localPOWgangImage}  alt="Queen Raae and her Piraty gang." />
+			<Image class="mb-8" src={localPOWkeyImage}  alt="Queen Raae and key." />
 
 			<p class="mb-8 p-4 bg-white rounded-xl border ">Check out our Github repo: <a href="https://github.com/queen-raae/pow-site/" target="_blank">https://github.com/queen-raae/pow-site/</a></p>
 		</section>
