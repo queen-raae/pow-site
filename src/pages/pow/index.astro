@@ -1,0 +1,134 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Content as Private } from "./your-private-data.md";
+import { Content as OwnWords } from "./own-words.md";
+import { Content as PersonalCycle } from "./personal-cycle.md";
+import { Content as PlansPricing } from "./plans-pricing.md";
+import { Content as About } from "./about.md";
+import { Content as Talk } from "./the-talk.md";
+import { Content as News } from "./newsletter.md";
+
+import { Image } from 'astro:assets';
+import localPOWfamilyImage from '../../images/pow-family.jpg';
+import localPOWgangImage from '../../images/pow-gang.jpg';
+import localPOWkeyImage from '../../images/pow-key-lock.jpg';
+import localPOWYOUTUBE from '../../images/pow-youtube.jpg';
+import Form from "../../components/NewsletterForm.astro";
+---
+
+<Layout
+	title="POW! - the privacy-first menstrual cycle journal"
+	description="Take charge of your menstrual cycle! Get to know your cycle, using your own words, in private 🔐"
+	keywords="menstrual cycle, privacy, astro web framework, astro website, astro web project, astro web app, astro javascript, astro js, astro web library, astro coding, astro web development"
+	canonicalURL="https://pow-site-astro.netlify.app/"
+	robots="index, follow"
+>
+<main class="bg-slate-100">
+  <section class="max-w-xl mx-auto p-8">
+  <header>
+    <h3 class="mb-2">POW! - the privacy-first menstrual cycle journal</h3>
+
+
+  <br />
+  <h1 class="mb-2">
+    Take charge of your menstrual cycle!
+  </h1>
+</header>
+</section>
+<section class="max-w-xl mx-auto p-8">
+  <br />
+  <p class="mb-8">Get to know your cycle, using your own words, without worrying that the data will end up in the hands of Facebook and the likes.</p>
+  <a href="https://my.usepow.app/signup/" class="no-underline mb-64 font-semibold text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-lg text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800">GET STARTED</a>
+  <br />
+  <br />
+  <br />
+  <br />
+</section>
+<section class="max-w-xl mx-auto p-8">
+  <Private />
+  <a href="https://my.usepow.app/signup/" class="no-underline mb-64 font-semibold text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-lg text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800">YES TO PRIVACY</a>
+  <br />
+  <br />
+  <br />
+  <br />
+  <OwnWords />
+  <a href="https://my.usepow.app/signup/" class="no-underline mb-64 font-semibold text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-lg text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800">YES TO YOUR OWN WORDS</a>
+  <br />
+  <br />
+  <br />
+  <br />
+  <PersonalCycle />
+  <a href="https://my.usepow.app/signup/" class="no-underline mb-64 font-semibold text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-lg text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800">TAKE CHARGE</a>
+  <br />
+  <br />
+  <br />
+  <br />
+  <PlansPricing />
+  <a href="https://my.usepow.app/signup/" class="no-underline mb-64 font-semibold text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-lg text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800">GET STARTED</a>
+  <br />
+  <br />
+  <br />
+  <br />
+  <News />
+  <Form />
+  <br />
+  <Image class="mb-8" src={localPOWkeyImage}  alt="Queen Raae plus two friends holding props: key, lock and logo." />
+  <About />
+  <Image class="mb-8" src={localPOWfamilyImage}  alt="Queen Raae, Cap'n Ola and Pirate Princess Lillian. A small family (business)." />
+  <Image class="mb-8" src={localPOWgangImage}  alt="Queen Raae and her Piraty gang." />
+
+
+  <Talk />
+  <div class="max-w-xl mx-auto">
+    <a href="https://youtu.be/nS36D2zUkvA" title="POW!">
+        <Image src={localPOWYOUTUBE}  alt="A logo sitting on a nest of eggs." />
+    </a>
+  </div>
+  <a href="https://my.usepow.app/signup/" class="no-underline mb-64 font-semibold text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-lg text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800">GET STARTED</a>
+</section>
+
+
+sections:
+  - title: Take charge of your menstrual cycle!
+    subtitle: Get to know your cycle, using your own words, without worrying that the data will end up in the hands of Facebook and the likes.
+    cta:
+      path: /signup
+      label: Get started
+  - title: Your private data
+    body: ./your-private-data.md
+    cta:
+      path: /signup
+      label: Yes to privacy
+  - title: Your own words
+    body: ./own-words.md
+    cta:
+      path: /signup
+      label: Yes to your own words
+  - title: Your personal cycle
+    body: ./personal-cycle.md
+    cta:
+      path: /signup
+      label: Take charge
+  - title: Plans & Pricing
+    body: ./plans-pricing.md
+    cta:
+      path: /signup
+      label: Get started
+  - title: Not ready to sign up?
+    subtitle: Learn more about Privacy, Menstrual Health, and POW! by subscribing to our newsletter. No menstruation experience needed ;)
+    form: newsletter
+  - title: About us
+    body: ./about.md
+    image: ./../assets/pow-family.jpg
+    imageAlt: Queen Raae, Cap'n Ola and Pirate Princess Lillian on the launch of POW!
+  - subtitle: Check out these videos over on Queen Raae's channel to get to know us better 👇👇👇
+    videos:
+      - id: Bk1jonYPFD4
+      - id: TzJfepDjpzM
+      - id: eRTJPIa39a4
+        action: Learn more about "Why make POW?" on YouTube
+  - body: the-talk.md
+    videos:
+      - id: nS36D2zUkvA
+    </main>
+    </Layout>

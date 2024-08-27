@@ -4,7 +4,7 @@ import { Image } from 'astro:assets';
 import localPOWfamilyImage from '../images/pow-family.jpg';
 import localPOWgangImage from '../images/pow-gang.jpg';
 import localPOWkeyImage from '../images/pow-key-lock.jpg';
-
+import Form from "../components/NewsletterForm.astro";
 ---
 
 <Layout
@@ -153,15 +153,17 @@ import localPOWkeyImage from '../images/pow-key-lock.jpg';
 			<br />
 			<br />
 			<br />
-			<h2 class="mb-10">
-				Not ready to sign up?
-			</h2>
+			<section>
+				<h2 class="mb-10">
+					Not ready to sign up?
+				</h2>
 
-			<p class="mb-8">
-				Learn more about Privacy, Menstrual Health, and POW! by subscribing to our newsletter. No menstruation experience needed ;)
-				(This section is coming soon 😺🏴‍☠️ )
-			</p>
-
+				<p class="mb-8">
+					Learn more about Privacy, Menstrual Health, and POW! by subscribing to our newsletter. No menstruation experience needed ;)
+					(This section is coming soon 😺🏴‍☠️ )
+				</p>
+				<Form />
+			<section/>
 			<h2 class="mb-10">
 				About us
 			</h2>
