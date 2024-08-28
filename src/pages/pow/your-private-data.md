@@ -13,5 +13,3 @@ More articles followed on the level of surveillance and the implications of thes
 
 With **POW!** not even the team can read your data. Your data is locked down using encryption, and only you have the key to open it.
   <br />
-  <br />
-
