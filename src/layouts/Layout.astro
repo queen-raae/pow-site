@@ -20,11 +20,11 @@ import Footer from "../components/Footer.astro";
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- FAVICON -->
-		<link rel="icon" type="image/svg" href="/favicon.svg" />
+		<link rel="icon" type="image/png" href="/icon.png" />
 		<!-- THEME COLOR -->
 		<meta name="theme-color" content="#800080" />
 		<!-- GENERIC METADATA -->
-		<meta name="author" content="Sean Rooney" />
+		<meta name="author" content="Ola Vea" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
 		<meta name="keywords" content={keywords} />
@@ -64,7 +64,15 @@ import Footer from "../components/Footer.astro";
 			}
 
 			h1 {
-				@apply text-5xl tracking-tight font-black text-purple-900; 
+				@apply text-5xl tracking-tight font-black text-purple-900;
+			}
+
+			h2 {
+				@apply text-4xl tracking-tight font-black text-red-600;
+			}
+
+			h3 {
+				@apply text-2xl tracking-tight font-black text-red-600;
 			}
 
 			p, a {
@@ -72,11 +80,11 @@ import Footer from "../components/Footer.astro";
 			}
 
 			li {
-				@apply font-semibold;
+				@apply text-lg;
 			}
 
 			a {
-				@apply text-sky-500 font-medium hover:underline underline-offset-4 break-words;
+				@apply text-purple-800 font-medium underline underline-offset-4 break-words;
 			}
 
 		</style>

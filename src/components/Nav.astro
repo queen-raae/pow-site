@@ -1,14 +1,32 @@
 ---
-
+import { Image } from 'astro:assets';
+import localPOWImage from '../images/logo.png';
 ---
 
-<nav class="bg-slate-50 p-4">
+
+<nav class="p-6 flex bg-slate-50 p-4">
     <div class="max-w-xl mx-auto">
-        <a href="/" title="Astro Web Framework Simple Starter Template">
-            <i class="material-icons">rocket</i>  Astro Basic Website Starter
+        <i class="icon">
+            <a href="/" title="POW!">
+                <Image src={localPOWImage}  alt="A logo sitting on a nest of eggs." />
+            </a>
+        </i>
+    </div>
+
+    <div class="mx-3 max-w-xl mx-auto">
+        <a href="https://my.usepow.app/login/" title="Log In">
+              Log In
         </a>
     </div>
+    <br />
+    <div>
+
+        <a href="https://my.usepow.app/signup/" class="inline-flex mx-3 no-underline font-semibold text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-lg text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800">GET STARTED</a>
+
+
+    </div>
+
 </nav>
 <style>
-	
+
 </style>

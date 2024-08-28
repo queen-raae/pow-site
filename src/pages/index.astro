@@ -1,70 +1,192 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from 'astro:assets';
+import localPOWfamilyImage from '../images/pow-family.jpg';
+import localPOWgangImage from '../images/pow-gang.jpg';
+import localPOWkeyImage from '../images/pow-key-lock.jpg';
+import Form from "../components/NewsletterForm.astro";
 ---
 
 <Layout
-	title="Astro Web Framework Simple Starter Template"
-	description="This is a simple starter template for the Astro Web Framework.  This is a clean boilerplate with some small useful additions."
-	keywords="Astro themes, astro web framework, astro website, astro web project, astro web app, astro javascript, astro js, astro web library, astro coding, astro web development"
-	canonicalURL="https://astro-simple-starter.netlify.app/"
+	title="POW! - the privacy-first menstrual cycle journal"
+	description="Take charge of your menstrual cycle! Get to know your cycle, using your own words, in private 🔐"
+	keywords="menstrual cycle, privacy, astro web framework, astro website, astro web project, astro web app, astro javascript, astro js, astro web library, astro coding, astro web development"
+	canonicalURL="https://pow-site-astro.netlify.app/"
 	robots="index, follow"
 >
 	<main class="bg-slate-100">
 		<section class="max-w-xl mx-auto p-8">
-			<h1>ASTRO WEB FRAMEWORK SIMPLE STARTER TEMPLATE</h1>
+			<h3 class="mb-2">POW! - the privacy-first menstrual cycle journal</h3>
 			<br />
-			<p>
-				Astro is a web framework that is performant, user-friendly, and
-				elegant. I made this Astro website starter because it's my go-to
-				setup for Astro projects. It includes:
+			<h1 class="mb-2">
+				Take charge of your menstrual cycle!
+			</h1>
+			<br />
+			<p class="mb-8">Get to know your cycle, using your own words, without worrying that the data will end up in the hands of Facebook and the likes.</p>
+
+			<a href="https://my.usepow.app/signup/" class="no-underline mb-64 font-semibold text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-lg text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800">GET STARTED</a>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<h2 class="mb-10">Your private data</h2>
+
+			<p class="mb-8">In February 2018, the <a href="https://www.wsj.com/articles/you-give-apps-sensitive-personal-information-then-they-tell-facebook-11550851636"
+			target="_blank"
+				>Wall Street Journal</a> came out with a report that popular health apps, period trackers among them, were leaking data to Facebook Analytics.
+
+				More articles followed on the level of surveillance and the implications of these apps:
+
+				<br />
+				<ul>
+					<li>
+						➡️ It [the app] also shared "reminders" within the app to take birth control medication with Facebook (<a href="https://www.buzzfeednews.com/article/meghara/period-tracker-apps-facebook-maya-mia-fem"
+						target="_blank"
+						>BuzzFeed</a>
+						)
+					</li>
+					<br />
+					<li>
+						➡️ These apps then shared user information with the company so it could keep track of how many of its employees were trying to get pregnant <a href="https://www.theguardian.com/world/commentisfree/2019/sep/14/your-period-tracking-app-could-be-sharing-intimate-details-with-all-of-facebook"
+						target="_blank"
+						>The Guardian</a>
+						)
+					</li>
+				</ul>
+				<br />
+				With POW! not even the team can read your data. Your data is locked down using encryption, and only you have the key to open it.
 			</p>
 			<br />
+			<br />
+			<a href="https://my.usepow.app/signup/" class="no-underline mb-40 font-semibold text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-lg text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800">YES TO PRIVACY</a>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<h2 class="mb-10">Your own words</h2>
+
+			<p class="mb-8">
+				Are you anxious, angry, or sad? Are you tired, exhausted, or sleepy? Did you bleed one drop, two drops, or three drops?
+			</p>
+			<p class="mb-8">
+				Do you feel overwhelmed when trying to name things in your cycle? It's often so very detailed and clinical.
+			</p>
+			<p class="mb-8">
+				Our founder (@raae) has this mood "mollefonk". There is never an option for that. So inevitably, she never remembers if she logged it as anxious, PMS, angry, or...you get the point.
+			</p>
+			<p class="mb-8 italic">
+
+				Wouldn't it be nice to use words and terminology familiar to you?
+			</p>
+			<p class="mb-8">
+
+				POW! solves this by letting you hashtag whatever cycle "thing" is important to you. It can be a made-up word like "mollefonk", or a more typical one like "pms".
+			</p>
+			<p class="mb-8">
+				An entry in POW! will look something like this: "First day of #period. Feeling #exhausted, but still kinda #happy."
+			</p>
+
+
+			<a href="https://my.usepow.app/signup/" class="inline-flex no-underline mb-40 font-semibold text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-lg text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800">YES TO YOUR OWN WORDS</a>
+
+
+
+
+			<h2 class="mb-10">
+				Your personal cycle
+			</h2>
+
+			<p class="mb-8">
+				Am I often exhausted on this day in my cycle? Was it this exact day last cycle I also wanted a divorce? When should I book those sales meetings?
+			</p>
+
+			<h3 class="mb-8">Knowledge is power!</h3>
+
+			<p class="mb-8">
+				Our founder (@raae) has learned not to make any drastic changes when she is #mollefonk.
+			</p>
+
+			<p class="mb-8">
+				A founder friend of POW! cannot sell while menstruating, but on the other hand, they are a selling machine when ovulating.
+			</p>
+
+			<p class="mb-8">
+				POW! does not make any guesses for you. It lets you know what you have tagged before on the same days of the cycle.
+			</p>
+			<br />
+			<p class="mb-8">
+				You might not always be able to plan around your cycle. But knowing that feeling exhausted on cycle day 14 is expected, you can at least skip the added stress of thinking there is a reason and trying to find a solution.
+			</p>
+
+			<a href="https://my.usepow.app/signup/" class="no-underline mb-64 font-semibold text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-lg text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800">TAKE CHARGE</a>
+
+			<br />
+			<br />
+			<br />
+			<h2 class="mb-10">
+				Plans & Pricing
+			</h2>
+
+			<p class="mb-8">
+				There are two plans:
+				<br />
+
 			<ul>
 				<li>
-					-Astro Tailwind CSS integration: <a
-						href="https://docs.astro.build/en/guides/integrations-guide/tailwind/"
-						target="_blank"
-						>https://docs.astro.build/en/guides/integrations-guide/tailwind/</a
-					>
+					➡️ Monthly at USD 4.50 a month,
 				</li>
 				<br />
 				<li>
-					-Astro sitemap integration: <a
-						href="https://docs.astro.build/en/guides/integrations-guide/sitemap/"
-						target="_blank"
-						>https://docs.astro.build/en/guides/integrations-guide/sitemap/</a
-					>
-				</li>
-				<br />
-				<li>
-					-Integration of Google Material Icons: <a
-						href="https://developers.google.com/fonts/docs/material_icons#setup_method_1_using_via_google_fonts"
-						target="_blank"
-						>https://developers.google.com/fonts/docs/material_icons#setup_method_1_using_via_google_fonts</a
-					>
-				</li>
-				<br />
-				<li>
-					-Integration of Google Fonts: <a
-						href="https://fonts.google.com/"
-						target="_blank">https://fonts.google.com/</a
-					>
-				</li>
-				<br />
-				<li>
-					-Structured metadata setup for improved SEO (see header in
-					layout file)
-				</li>
-				<br />
-				<li>-Added navbar and footer components</li>
-				<br />
-				<li>
-					-Added 404 page: <a href="/404" target="_blank"
-						>https://astro-simple-starter.netlify.app/404</a>
+					➡️ and yearly at USD 45.00 a year, saving you two months.
 				</li>
 			</ul>
-			<br/>
-			<p class="p-4 bg-white rounded-xl border ">Github: <a href="https://github.com/Sean-93/astro-basic-starter" target="_blank">https://github.com/Sean-93/astro-basic-starter</a></p>
+
+				<br />
+				If you are not happy for any reason, we will refund your money within the first 60 days.
+			</p>
+			<br />
+			<br />
+			<a href="https://my.usepow.app/signup/" class="no-underline mb-40 font-semibold text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-lg text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800">GET STARTED</a>
+
+			<br />
+			<br />
+			<br />
+			<section>
+				<h2 class="mb-10">
+					Not ready to sign up?
+				</h2>
+
+				<p class="mb-8">
+					Learn more about Privacy, Menstrual Health, and POW! by subscribing to our newsletter. No menstruation experience needed ;)
+					(This section is coming soon 😺🏴‍☠️ )
+				</p>
+				<Form />
+			<section/>
+			<h2 class="mb-10">
+				About us
+			</h2>
+
+			<p class="mb-8">
+				POW! is brought to you by Queen Raae (
+				<a
+					href="https://x.com/raae/"
+					target="_blank">@raae</a
+				>
+					), Cap'n Ola (
+				<a
+					href="https://x.com/OlaHolstVea"
+					target="_blank">@OlaHolstVea</a
+				>
+					) and Pirate Princess Lillian. A small family (business) in the tiny capital of Norway, Oslo.
+			</p>
+
+			<Image class="mb-8" src={localPOWfamilyImage}  alt="Queen Raae, Cap'n Ola and Pirate Princess Lillian. A small family (business)." />
+			<Image class="mb-8" src={localPOWgangImage}  alt="Queen Raae and her Piraty gang." />
+			<Image class="mb-8" src={localPOWkeyImage}  alt="Queen Raae and key." />
+
+			<p class="mb-8 p-4 bg-white rounded-xl border ">Check out our Github repo: <a href="https://github.com/queen-raae/pow-site/" target="_blank">https://github.com/queen-raae/pow-site/</a></p>
 		</section>
 	</main>
 </Layout>
