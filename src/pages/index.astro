@@ -157,7 +157,7 @@ import Form from "../components/NewsletterForm.astro";
 				<h2 class="mb-10">
 					Not ready to sign up?
 				</h2>
-				<button>Get greeting</button>
+				<button class="no-underline mb-40 font-semibold text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-lg text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800">Get 'astro:actions' greeting</button>
 
 				<script>
 					import { actions } from 'astro:actions';
@@ -165,7 +165,7 @@ import Form from "../components/NewsletterForm.astro";
 					const button = document.querySelector('button');
 					button?.addEventListener('click', async () => {
 						// Show alert pop-up with greeting from action
-						const { data, error } = await actions.getGreeting({ name: "Houston" });
+						const { data, error } = await actions.getGreeting({ name: "astro:actions are working!" });
   						if (!error) alert(data);
 					});
 				</script>
@@ -173,7 +173,7 @@ import Form from "../components/NewsletterForm.astro";
 					Learn more about Privacy, Menstrual Health, and POW! by subscribing to our newsletter. No menstruation experience needed ;)
 					(This section is coming soon 😺🏴‍☠️ )
 				</p>
-				<Form />
+				<!-- <Form /> -->
 			<section/>
 			<h2 class="mb-10">
 				About us
