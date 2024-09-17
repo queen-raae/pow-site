@@ -4,7 +4,7 @@ import { Image } from 'astro:assets';
 import localPOWfamilyImage from '../images/pow-family.jpg';
 import localPOWgangImage from '../images/pow-gang.jpg';
 import localPOWkeyImage from '../images/pow-key-lock.jpg';
-import Form from "../components/NewsletterForm.astro";
+import News from "../components/Newsletter.astro";
 import { actions } from 'astro:actions';
 
 const result = Astro.getActionResult(actions.newsletter);
@@ -34,19 +34,8 @@ const result = Astro.getActionResult(actions.newsletter);
 			<br />
 			<br />
 			<h2 class="mb-10">Your private data</h2>
-			<form method="POST" action={'/confirmation' + actions.newsletter}>
-				<label>
-				  E-mail
-				  <input required type="email" name="email" />
-				</label>
-				<button>Sign up</button>
-			  </form>
-			<button>Ahoy, astro:actions!</button>
-			<script>
-				const button = document.querySelector('button');
 
-				button?.addEventListener('click', async () => {})
-			</script>
+			<News />
 			<p class="mb-8">In February 2018, the <a href="https://www.wsj.com/articles/you-give-apps-sensitive-personal-information-then-they-tell-facebook-11550851636"
 			target="_blank"
 				>Wall Street Journal</a> came out with a report that popular health apps, period trackers among them, were leaking data to Facebook Analytics.
@@ -177,7 +166,7 @@ const result = Astro.getActionResult(actions.newsletter);
 					Learn more about Privacy, Menstrual Health, and POW! by subscribing to our newsletter. No menstruation experience needed ;)
 					(This section is coming soon 😺🏴‍☠️ )
 				</p>
-				<Form />
+
 			<section/>
 			<h2 class="mb-10">
 				About us
