@@ -9,6 +9,6 @@ import netlify from "@astrojs/netlify";
 export default defineConfig({
   site: "https://astro-simple-starter.netlify.app/",
   integrations: [tailwind(), sitemap()],
-  output: "hybrid",
+  output: "static",
   adapter: netlify(),
 });
