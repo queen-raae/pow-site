@@ -1,14 +1,15 @@
 ---
 import { Image } from 'astro:assets';
 import localPOWImage from '../images/logo.png';
+
 ---
 
 
-<nav class="p-6 fixed flex bg-slate-50 p-4">
+<nav class="sticky p-6 flex bg-slate-50 p-4">
     <div class="max-w-xl mx-auto">
         <i class="icon">
             <a href="/" title="POW!">
-                <Image src={localPOWImage}  alt="A logo sitting on a nest of eggs." />
+                <Image class="w-1/4" src={localPOWImage}  alt="A logo sitting on a nest of eggs." />
             </a>
         </i>
     </div>
@@ -27,6 +28,3 @@ import localPOWImage from '../images/logo.png';
     </div>
 
 </nav>
-<style>
-
-</style>
