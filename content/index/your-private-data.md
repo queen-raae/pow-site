@@ -1,3 +1,6 @@
+<br />
+<br />
+<br />
 In February 2018, the [Wall Street Journal](https://www.wsj.com/articles/you-give-apps-sensitive-personal-information-then-they-tell-facebook-11550851636) came out with a report that popular health apps, period trackers among them, were leaking data to Facebook Analytics.
 
 More articles followed on the level of surveillance and the implications of these apps:

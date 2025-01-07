@@ -1,6 +1,5 @@
-
-
 ## Not ready to sign up?
 
-Learn more about Privacy, Menstrual Health and POW! No menstruation experience needed.
+<br />
 
+Learn more about Privacy, Menstrual Health and POW! by subscribing to our newsletter. No menstruation experience needed.
