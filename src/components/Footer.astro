@@ -5,8 +5,10 @@ import Form from "../components/NewsletterForm.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<footer class="py-1">
-  <section class="max-w-xl mx-auto px-4 py-1">
+<footer
+  class="flex grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 py-4 px-4"
+>
+  <section class="max-w-xl py-1">
     <p class="py-0 text-base font-normal">Made with ❤</p>
     <p class="py-0 text-base font-normal">
       by
@@ -19,10 +21,16 @@ import Layout from "../layouts/Layout.astro";
       and family.
     </p>
     <br />
+  </section>
+
+  <section>
     <p class="py-0 text-base font-normal">Sign up for the</p>
     <a href="#" class="py-0 text-base font-normal">POW! Newsletter</a>
     <br />
     <br />
+  </section>
+
+  <section class="md:text-right lg:text-right xl:text-right">
     <a
       class="py-0 text-slate-600 text-base font-normal"
       href="mailto:hello@usepow.app">hello@usepow.app</a
