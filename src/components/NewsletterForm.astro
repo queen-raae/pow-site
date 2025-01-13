@@ -1,58 +1,35 @@
-<form action={import.meta.env.PUBLIC_OUTSETA_EMAIL_LIST_URL} method="post">
-  <label for="Name">Your first name</label>
-  <input type="text" id="Name" name="Name" />
-
-  <label for="Email">Your best email address:</label>
-  <input type="email" id="Email" name="Email" required />
-
-  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+<form
+  class="lg:col-span-5"
+  action={import.meta.env.PUBLIC_OUTSETA_EMAIL_LIST_URL}
+  method="post"
+>
+  <label class="text-xl tracking-tight font-light" for="Email"
+    >Your best email address:</label
+  >
+  <div class="flex gap-x-4">
     <input
+      class="min-w-0 flex-auto rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+      placeholder="fart@uni.corn"
+      type="email"
+      id="Email"
+      name="Email"
+      required
+    />
+    <button
+      type="submit"
+      class="flex-none rounded-md bg-red-600 hover:bg-red-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+      >Subscribe</button
+    >
+    <input
+      class="invisible"
       type="text"
       name="o_oQArNqbCOZ0Fzd2D9MepfyUm_h890WSFg"
       tabindex="-1"
       value=""
     />
   </div>
-
-  <input
-    class="button bold"
-    type="submit"
-    value="Notify me!"
-    data-wait="Please wait..."
-  />
 </form>
-
 <p>
   Make sure to confirm your subscription: Look for an email sent from Queen Raae
   and hit "Yes, subscribe me to this list"
 </p>
-
-<style>
-  form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em;
-
-    + p {
-      font-size: 0.6em;
-      display: none;
-    }
-
-    &:not(:has(input)) {
-      display: block;
-    }
-  }
-
-  label {
-    width: 100%;
-    font-size: 0.6em;
-    margin-bottom: -0.3em;
-  }
-
-  input[type="email"] {
-    padding: 0.5em 0.5em;
-    width: 40ch;
-    font-size: 1em;
-    border: var(--border);
-  }
-</style>
