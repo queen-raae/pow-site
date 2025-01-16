@@ -1,0 +1,104 @@
+---
+// <div class="bg-white py-16 sm:py-24 lg:py-32">
+//   <div
+//     class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8"
+//   >
+//     <form
+//       action={import.meta.env.PUBLIC_OUTSETA_EMAIL_LIST_URL}
+//       method="post"
+//       class="w-full max-w-md lg:col-span-5 lg:pt-2"
+//     >
+//       <div class="flex gap-x-4">
+//         <label for="Email">Your best email address:</label>
+//         <input type="email" id="Email" name="Email" required />
+
+//         <div style="position: absolute; left: -5000px;" aria-hidden="true">
+//           <input
+//             type="text"
+//             name="o_oQArNqbCOZ0Fzd2D9MepfyUm_h890WSFg"
+//             tabindex="-1"
+//             value=""
+//           />
+//         </div>
+
+//         <button
+//           type="submit"
+//           class="flex-none rounded-md bg-red-700 hover:bg-red-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+//           >Subscribe</button
+//         >
+//       </div>
+//     </form>
+//   </div>
+// </div>
+// <p>
+//   Make sure to confirm your subscription: Look for an email sent from Queen Raae
+//   and hit "Yes, subscribe me to this list"
+// </p>
+// <div
+//   class="no-underline mb-64 font-semibold text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded text-sm px-5 py-2 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800 mb-8"
+// >
+// </div>
+
+// <input
+//           class="button bold"
+//           type="submit"
+//           value="Notify me!"
+//           data-wait="Please wait..."
+//         />
+//          <style>
+//   form {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 0.5em;
+
+//     + p {
+//       font-size: 0.6em;
+//       display: none;
+//     }
+
+//     &:not(:has(input)) {
+//       display: block;
+//     }
+//   }
+
+//   label {
+//     width: 100%;
+//     font-size: 0.6em;
+//     margin-bottom: -0.3em;
+//   }
+
+//   input[type="email"] {
+//     padding: 0.5em 0.5em;
+//     width: 40ch;
+//     font-size: 1em;
+//     border: var(--border);
+//   }
+// </style>
+---
+
+<form class="w-full max-w-md lg:col-span-5 lg:pt-2">
+  <div class="flex gap-x-4">
+    <label for="email-address" class="sr-only">Email address</label>
+    <input
+      id="email-address"
+      name="email"
+      type="email"
+      autocomplete="email"
+      required
+      class="min-w-0 flex-auto rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+      placeholder="Enter your email"
+    />
+    <button
+      type="submit"
+      class="flex-none rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+      >Subscribe</button
+    >
+  </div>
+  <p class="mt-4 text-sm/6 text-gray-900">
+    We care about your data. Read our <a
+      href="#"
+      class="font-semibold text-indigo-600 hover:text-indigo-500"
+      >privacy&nbsp;policy</a
+    >.
+  </p>
+</form>
